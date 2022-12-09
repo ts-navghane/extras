@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-$short_options = "n:";   // Required value
-$short_options .= "m::"; // Optional value
+$short_options = "n:";   // Required value, no of rows
+$short_options .= "m::"; // Optional value, mode of the file
 
 $long_options = [
-    "no_of_rows:", // Required value
-    "mode::",      // Optional value
+    "no_of_rows:", // Required value, no of rows
+    "mode::",      // Optional value, mode of the file
 ];
 
 $options = getopt($short_options, $long_options);
